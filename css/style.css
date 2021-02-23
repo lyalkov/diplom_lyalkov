@@ -35,6 +35,7 @@
   
   /* ========== HEADER ========= */
   
+  @media (min-width: 1200px) {
   .header-wrapper {
     width: 100%;
     margin: auto;
@@ -486,7 +487,7 @@
     width: 30%;
   }
   .product-body {
-    padding: 20px 30px 20px 30px;
+    padding: 30px;
     border: 2px solid #b59f5b;
     position:relative;
     width: 350px;
@@ -500,6 +501,7 @@
   .link {
     color: #b59f5b;
     text-decoration: none;
+    font-family: "opensans-regular", sans-serif;
   }
   .product-description {
     font-family: "opensans-regular", sans-serif;
@@ -537,10 +539,10 @@
     
   }
   .product-button:hover {
-    color: black;
+    color: rgb(223, 213, 128);
   }
   .product-button:focus {
-    outline: 3px solid #b59f5b;
+    outline: 1px solid rgb(223, 213, 128);
   }
 
   /* ========== FOOTER ========= */
@@ -626,3 +628,4 @@
   .copyright:hover {
     font-size: 13px;
   }
+}

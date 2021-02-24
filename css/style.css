@@ -44,7 +44,7 @@
   }
   
   .header {
-    background-image: url("/images/banner-bg.jpg");
+    background-image: url("../images/banner-bg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -103,32 +103,36 @@
   }
   
   /* ========== PAGE ========= */
- 
+
+ .trends {
+  margin-bottom: 50px;
+ }
   .trends-wrapper {
     display: flex;
     margin: auto;
+    position: relative;
   }
 
   .first-trend {
-    background-image: url("/images/trend1.jpg");
+    background-image: url("../images/trend1.jpg");
   }
 
   .second-trend {
-    background-image: url("/images/trend2.jpg");
+    background-image: url("../images/trend2.jpg");
   }
 
   .third-trend {
-    background-image: url("/images/trend3.jpg");
+    background-image: url("../images/trend3.jpg");
   }
 
   .fourth-trend {
-    background-image: url("/images/trend4.jpg");
+    background-image: url("../images/trend4.jpg");
   }
 
   .trends-content {
+    height: 300px; 
     width: 25%;
-    margin-bottom: 50px;
-    background-size: auto;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
@@ -539,10 +543,10 @@
     
   }
   .product-button:hover {
-    color: rgb(223, 213, 128);
+    background-color: rgb(223, 213, 128);
   }
   .product-button:focus {
-    outline: 1px solid rgb(223, 213, 128);
+    outline: 2px solid rgb(223, 213, 128);
   }
 
   /* ========== FOOTER ========= */

@@ -107,9 +107,10 @@
     <div class="page-wrapper">
       <main class="main">
         <article class="section">
-          <figure class="section-media">
+          <picture class="section-media">
+            <source srcset="images/last-post1.jpg">
             <img class="img" src="images/last-post1.jpg" alt="человек на пляже" width="380">
-          </figure>
+          </picture>
           <div class="content">
             <ul class="list-tag">
               <li class="tag">
@@ -131,9 +132,10 @@
           </div>
         </article>
         <article class="section">
-          <figure class="section-media">
+          <picture class="section-media">
+            <source srcset="images/last-post2.jpg">
             <img class="img" src="images/last-post2.jpg" alt="йога на пляже" width="380">
-          </figure>
+          </picture>
           <div class="content">
             <ul class="list-tag">
               <li class="tag">
@@ -155,9 +157,10 @@
           </div>
         </article>
         <article class="section">
-          <figure class="section-media">
+          <picture class="section-media">
+            <source srcset="images/last-post3.jpg">
             <img class="img" src="images/last-post3.jpg" alt="человек на тусовке" width="380">
-          </figure>
+          </picture>
           <div class="content">
             <ul class="list-tag">
               <li class="tag">
@@ -177,9 +180,10 @@
           </div>
         </article>
         <article class="section">
-          <figure class="section-media">
+          <picture class="section-media">
+            <source srcset="images/last-post4.jpg">
             <img class="img" src="images/last-post4.jpg" alt="еда на столе" width="380">
-          </figure>
+          </picture>
           <div class="content">
             <ul class="list-tag">
               <li class="tag">
@@ -202,9 +206,10 @@
           </div>
         </article>
         <article class="section">
-          <figure class="section-media">
+          <picture class="section-media">
+            <source srcset="images/last-post5.jpg">
             <img class="img" src="images/last-post5.jpg" alt="подушка с принтом" width="380">
-          </figure>
+          </picture>
           <div class="content">
             <ul class="list-tag">
               <li class="tag">
@@ -233,9 +238,10 @@
         <section class="posts-search">
           <h3 class="aside-title">Новые посты</h3>
           <article class="aside-posts">
-            <figure class="aside-posts-media">
+            <picture class="aside-posts-media">
+              <source srcset="images/images/2.jpg">
               <img class="img-posts" src="images/2.jpg" alt="Человек на пляже" width="70">
-            </figure>
+            </picture>
             <div class="aside-content">
               <time class="aside-date">14 июня 2019</time>
               <h4 class="aside-content-title">
@@ -244,9 +250,10 @@
             </div>
           </article>
           <article class="aside-posts">
-            <figure class="aside-posts-media">
+            <picture class="aside-posts-media">
+              <source srcset="images/images/151.jpg">
               <img class="img-posts" src="images/151.jpg" alt="Йога на пляже" width="70">
-            </figure>
+            </picture>
             <div class="aside-content">
               <time class="aside-date">14 июня 2019</time>
               <h4 class="aside-content-title">
@@ -255,9 +262,10 @@
             </div>
           </article>
           <article class="aside-posts">
-            <figure class="aside-posts-media">
+            <picture class="aside-posts-media">
+              <source srcset="images/images/45.jpg">
               <img class="img-posts" src="images/45.jpg" alt="Кресло у пианино" width="70">
-            </figure>
+            </picture>
             <div class="aside-content">
               <time class="aside-date">14 июня 2019</time>
               <h4 class="aside-content-title">
@@ -266,9 +274,10 @@
             </div>
           </article>
           <article class="aside-posts">
-            <figure class="aside-posts-media">
+            <picture class="aside-posts-media">
+              <source srcset="images/images/501.jpg">
               <img class="img-posts" src="images/501.jpg" alt="Еда на столе" width="70">
-            </figure>
+            </picture>
             <div class="aside-content">
               <time class="aside-date">14 июня 2019</time>
               <h4 class="aside-content-title">
@@ -277,9 +286,10 @@
             </div>
           </article>
           <article class="aside-posts">
-            <figure class="aside-posts-media">
+            <picture class="aside-posts-media">
+              <source srcset="images/images/7.jpg">
               <img class="img-posts" src="images/7.jpg" alt="Распущенные волосы" width="70">
-            </figure>
+            </picture>
             <div class="aside-content">
               <time class="aside-date">14 июня 2019</time>
               <h4 class="aside-content-title">
@@ -480,6 +490,11 @@
   </footer>
   <div class="popup">
     <form class="popup-form">
+      <div class="exit-form">
+        <button class="popup-exit" type="submit">
+          <span class="visually-hidden">Закрыть окно</span>
+        </button>
+      </div>
       <h3 class="aside-title title-name">Ваш фидбек</h3>
       <div class="form-row">
         <span class="form-name">Как часто вы заходите на сайт?</span>
@@ -507,8 +522,9 @@
         <textarea class="form-field" placeholder="Может, больше рецептов?"></textarea>
       </div>
       <div class="form-row">
-        <button class="popup-button">Отправить</button>
-        <span class="visually-hidden">Отправить</span>
+        <button class="popup-button" type="submit">Отправить
+          <span class="visually-hidden">Отправить</span>
+        </button>
       </div>
     </form>
   </div>

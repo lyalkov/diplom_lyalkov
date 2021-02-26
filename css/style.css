@@ -666,11 +666,28 @@
 }
 
 /* ========== POPUP ========= */
+
 .popup-form {
   width: 390px;
   margin: auto;
   padding: 50px 30px;
   border: 1px solid black;
+}
+
+.exit-form {
+  display: flex;
+  justify-content: flex-end;
+  margin: -80px -30px 80px 0;
+}
+
+.popup-exit {
+  height: 25px;
+  width: 25px;
+  background-image: url("../svg/form-x.svg");
+  background-size: 25px;
+  background-color: white;
+  cursor: pointer;
+  border: none;
 }
 
 .form-row {

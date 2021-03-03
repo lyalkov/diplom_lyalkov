@@ -886,16 +886,33 @@ aside-posts-media {
 /* ========== POPUP ========= */
 
 .popup {
-  position: fixed;
-  top: 100px;
-  left: calc(50% - 195px);
-  background-color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.popup::after {
+  content: "";
+  background-color: #000000;
+  opacity: 0.85;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .popup-form {
   width: 390px;
   margin: auto;
   padding: 50px 30px;
+  position: relative;
+  z-index: 2;
+  background-color: white;
+  margin-top: 60px;
 }
 
 .exit-form {

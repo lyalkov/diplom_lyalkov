@@ -892,6 +892,9 @@ aside-posts-media {
   bottom: 0;
   left: 0;
   z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .popup::after {
@@ -912,7 +915,6 @@ aside-posts-media {
   position: relative;
   z-index: 2;
   background-color: white;
-  margin-top: 60px;
 }
 
 .exit-form {

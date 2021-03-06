@@ -226,7 +226,7 @@
 
 @media (min-width: 1200px) {
   .headline {
-    font-size: 45px;
+    font-size: 3vmax;
   }
 }
 
@@ -238,8 +238,6 @@
 
 .trends-wrapper {
   display: flex;
-  margin: auto;
-  position: relative;
 }
 
 @media (orientation: portrait) and (max-width: 640px) {
@@ -291,7 +289,7 @@
   position: relative;
   display: flex;
   align-items: flex-end;
-  height: 348px;
+  height: 45vh;
 }
 
 @media (min-width: 1200px) {
@@ -323,12 +321,17 @@
     margin-right: 2px;
   }
 }
-
+@media (orientation: landscape) and (max-width: 640px) {
+  .trends-content {
+    height: 70vh;
+  }
+}
 .trends-content-title {
   border: 3px solid #79683c;
   position: relative;
-  padding: 30px;
-  margin: 15px;
+  padding: 20px;
+  margin: 20px;
+  width: 100%;
 }
 
 .trend-title {
@@ -338,10 +341,30 @@
 .trend-title-list {
   color: white;
   text-transform: uppercase;
-  font-size: 15px;
   font-family: "opensans-bold", sans-serif;
   text-decoration: none;
   position: relative;
+}
+
+@media (max-width: 640px) {
+  .trend-title-list {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1199px) {
+  .trend-title-list {
+    font-size: 17px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .trend-title-list {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .trend-title-list:hover {
@@ -353,7 +376,6 @@
 }
 
 .page-wrapper {
-
   margin: auto;
   padding: 0 15px;
   display: flex;
@@ -763,19 +785,17 @@ aside-posts-media {
 
 .products {
   margin-top: 60px;
+  padding: 0 30px;
 }
 
 .product-wrapper {
   margin: auto;
-  padding: 0 45px;
   display: flex;
-  justify-content: space-between;
 }
 
 @media (max-width: 640px) {
   .product-wrapper {
     flex-direction: column;
-    width: 320px;
   }
 }
 
@@ -783,25 +803,28 @@ aside-posts-media {
   .product-wrapper {
     flex-wrap: wrap;
   }
-}
-
-@media (min-width: 1200px) {
-
-  .product-wrapper {
-    width: 1200px;
+  .product {
+    margin: 0 0 60px 60px;
   }
 }
 
-.product {
-  width: 300px;
+@media (min-width: 1200px) {
+  .product-wrapper {
+    width: 1100px;
+  }
+  .product {
+    margin-right: 100px;
+  }
 }
+
 
 .product-body-footer {
   border: 2px solid #b59f5b;
-  margin: -30px;
+  margin: -30px -22px 20px -22px;
   position: relative;
   padding: 30px;
-  min-height: 260px;
+  height: 65%;
+  width: 345px;
 }
 
 .product-body {
@@ -812,6 +835,7 @@ aside-posts-media {
   font-family: "opensans-bold", sans-serif;
   padding-top: 20px;
   text-transform: uppercase;
+  line-height: 22px;
 }
 
 .link {
@@ -822,8 +846,8 @@ aside-posts-media {
 
 .product-description {
   font-family: "opensans-regular", sans-serif;
-  padding-top: 10px;
-  font-size: 16px;
+  padding-top: 14px;
+  font-size: 15px;
 }
 
 .product-footer {
@@ -834,9 +858,7 @@ aside-posts-media {
 }
 
 .product-prices {
-  padding-top: 5px;
   font-family: "opensans-bold", sans-serif;
-  font-weight: 600;
 }
 
 .product-price {
@@ -846,7 +868,7 @@ aside-posts-media {
 
 .old {
   text-decoration: line-through;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .product-button {
@@ -855,12 +877,9 @@ aside-posts-media {
   background-color: #b59f5b;
   font-size: 14px;
   text-transform: uppercase;
-  font-weight: 600;
-  padding: 10px;
   width: 140px;
   height: 48px;
   cursor: pointer;
-  margin-top: 5px;
   font-family: "opensans-bold", sans-serif;
 }
 

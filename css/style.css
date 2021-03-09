@@ -763,18 +763,12 @@ aside-posts-media {
   border: none;
   background-color: #b59f5b;
   font-family: inherit;
-  font-size: 16px;
+  font-size: 14px;
   text-transform: uppercase;
   padding: 10px;
   cursor: pointer;
   margin-top: 15px;
   width: 100%;
-}
-
-@media (max-width: 640px) {
-  .subscribe-form-button {
-    font-size: 14px;
-  }
 }
 
 .subscribe-form-button:focus {

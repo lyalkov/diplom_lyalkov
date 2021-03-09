@@ -79,6 +79,12 @@
   position: relative;
 }
 
+@media (min-width: 641px) and (max-width: 1199px) {
+  .header-wrapper {
+    padding: 0 30px;
+  }
+}
+
 @media (min-width: 1200px) {
   .header-wrapper {
     width: 1200px;
@@ -394,7 +400,7 @@
 
   .page-wrapper {
     flex-direction: column;
-    
+
   }
 }
 
@@ -412,9 +418,7 @@
 
 /* ========== MAIN ========= */
 
-@media (min-width: 641px) and (max-width: 1199px) {
-  
-}
+@media (min-width: 641px) and (max-width: 1199px) {}
 
 @media (min-width: 1200px) {
   .main {
@@ -460,7 +464,7 @@
 }
 
 @media (min-width: 641px) and (max-width: 1199px) {
-  
+
   .content {
     width: 390px;
   }
@@ -593,10 +597,11 @@
 }
 
 @media (min-width: 1200px) {
-.aside {
-  width: 290px;
+  .aside {
+    width: 290px;
+  }
 }
-}
+
 .aside-title {
   font-size: 14px;
   text-transform: uppercase;
@@ -679,6 +684,7 @@ aside-posts-media {
   .aside-content-title {
     width: 100%;
   }
+
   .aside-content-list {
     font-size: 14px;
   }
@@ -691,11 +697,13 @@ aside-posts-media {
 .posts-form-search {
   margin-top: 55px;
   display: flex;
-  
+
 }
+
 .posts-search-label {
   flex: 1 1 auto;
 }
+
 .posts-search-input {
   width: 100%;
   border: none;
@@ -760,6 +768,7 @@ aside-posts-media {
     font-size: 14px;
   }
 }
+
 .subscribe-form-button:focus {
   outline: 3px solid #b59f5b;
 }
@@ -983,7 +992,7 @@ aside-posts-media {
 
 .footer {
   margin-top: 80px;
-  
+
 }
 
 .footer-wrapper {

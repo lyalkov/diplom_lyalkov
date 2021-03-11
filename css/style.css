@@ -411,7 +411,7 @@
 
 @media (min-width: 1200px) {
   .page-wrapper {
-    width: 1170px;
+    width: 1200px;
     justify-content: space-between;
   }
 }
@@ -846,7 +846,6 @@ aside-posts-media {
 .product-wrapper {
   margin: auto;
   display: flex;
-  padding: 0 15px;
 }
 
 @media (max-width: 640px) {
@@ -854,58 +853,58 @@ aside-posts-media {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 330px;
+    padding: 0 40px;
   }
 
-  .product {
-    min-width: 250px;
+  .product:not(:last-child) {
+    margin-bottom: 25px;
   }
 }
 
 @media (min-width: 641px) and (max-width: 1199px) {
   .product-wrapper {
     flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
+    max-width: 780px;
+    padding: 0 55px;
   }
 
   .product {
-    margin: 0 0 60px 66px;
+    margin-right: 65px;
+    margin-bottom: 27px;
+  }
+  .product:nth-of-type(2n+2) {
+    margin-right: 0;
   }
 }
 
 @media (min-width: 1200px) {
   .product-wrapper {
-    width: 1100px;
+    width: 1200px;
+    padding: 0 40px;
   }
 
-  .product {
-    margin-right: 100px;
+  .product:not(:last-child) {
+    margin-right: 110px;
   }
 }
 
-
 .product-body-footer {
-  border: 2px solid #b59f5b;
-  margin: -30px -22px 20px -22px;
+  border: 3px solid #b59f5b;
+  margin: -30px -20px 0 -20px;
   position: relative;
-  padding: 30px;
-  width: 345px;
-  min-height: 60%;
+  padding: 30px 20px 20px 20px;
 }
 
 @media (max-width: 640px) {
-  .product-body-footer {
-    min-width: 100px;
-  }
-
   .product-img {
-    min-width: 100px;
+    width: 100%;
   }
 }
 
 @media (min-width: 641px) and (max-width: 1199px) {
   .product-body-footer {
-    width: 335px;
+    max-width: 340px;
   }
 }
 
@@ -927,6 +926,9 @@ aside-posts-media {
 }
 
 @media (min-width: 1200px) {
+  .product-body-footer {
+    min-height: 275px;
+  }
   .product-name {
     font-size: 20px;
   }
@@ -936,6 +938,10 @@ aside-posts-media {
   color: #b59f5b;
   text-decoration: none;
   font-family: "opensans-regular", sans-serif;
+}
+
+.link:hover {
+  color: rgb(223, 213, 128);
 }
 
 .product-description {
@@ -948,7 +954,7 @@ aside-posts-media {
 .product-footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   font-family: "opensans-regular", sans-serif;
 }
 
@@ -973,7 +979,7 @@ aside-posts-media {
   background-color: #b59f5b;
   font-size: 14px;
   text-transform: uppercase;
-  width: 140px;
+  width: 139px;
   height: 48px;
   cursor: pointer;
   font-family: "opensans-bold", sans-serif;

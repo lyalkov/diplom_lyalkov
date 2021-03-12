@@ -33,6 +33,14 @@
   position: absolute;
 }
 
+@media (max-width: 640px), 
+(min-width: 641px) and (max-width: 1199px) {
+  .visually-hidden {
+    display: none;
+  }
+}
+
+
 /* ========== HEADER ========= */
 
 .header::before {

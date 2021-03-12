@@ -857,77 +857,77 @@ aside-posts-media {
   margin: auto;
   display: flex;
 }
+
 .product {
   display: flex;
   flex-direction: column;
-  
 }
-@media (max-width: 640px) {
+
+.product-img {
+  margin: 0 20px 0 20px;
+}
+
+@media (max-width: 640px),
+(min-width: 641px) and (max-width: 767px) {
   .product-wrapper {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width: 330px;
-    padding: 0 40px;
+    padding: 0 15px;
   }
-
   .product:not(:last-child) {
     margin-bottom: 25px;
   }
   .product-img {
-    max-width: 100%;
+    max-width: 280px;
   }
 }
 
-@media (min-width: 726px) and (max-width: 1199px) {
+@media (max-width: 320px) {
+  .product-img {
+    max-width: 250px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
   .product-wrapper {
     flex-wrap: wrap;
-    max-width: 728px;
-    padding: 0 55px;
+    max-width: 768px;
+    padding: 0 35px;
   }
 
   .product {
-    margin-right: 65px;
-    margin-bottom: 27px;
+    margin-right: 23px;
+    margin-bottom: 28px;
+    max-width: 335px;
   }
 
   .product:nth-of-type(2n+2) {
     margin-right: 0;
+  }
+  .product-img {
+    width: calc(100% - 40px);
   }
 }
 
 @media (min-width: 1200px) {
   .product-wrapper {
     width: 1200px;
-    padding: 0 40px;
+    padding: 0 15px;
   }
 
   .product:not(:last-child) {
-    margin-right: 110px;
+    margin-right: 60px;
   }
 }
 
 .product-body-footer {
   border: 3px solid #b59f5b;
-  margin: -30px -20px 0 -20px;
+  margin-top: -30px;
   position: relative;
   padding: 30px 20px 20px 20px;
   flex-grow: 1;
-}
-
-@media (min-width: 726px) and (max-width: 1199px) {
-  
-  .product-body-footer {
-    max-width: 340px;
-  }
-
-  .product-img {
-    max-width: 270px;
-  }
-
-  .product-body {
-    max-width: 270px;
-  }
 }
 
 .product-body {
@@ -939,22 +939,7 @@ aside-posts-media {
   padding-top: 20px;
   text-transform: uppercase;
 }
-@media (min-width: 642px) and (max-width: 725px) {
-  .product-wrapper {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 340px;
-    padding: 0 40px;
-  }
 
-  .product:not(:last-child) {
-    margin-bottom: 25px;
-  }
-  .product {
-    margin-right: 0;
-  }
-}
 @media (max-width: 640px),
 (min-width: 641px) and (max-width: 1199px) {
   .product-name {
